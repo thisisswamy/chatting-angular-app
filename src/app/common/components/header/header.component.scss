@@ -1,11 +1,13 @@
+
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    border-radius: 10px;
     background-color: #f1f3f4;
     margin-bottom: 6px;
+    // width: 50%;
     .dp{
         border: 2px dotted red;
         border-radius: 50%;
@@ -48,5 +50,19 @@ header{
             }
             
         }
+    }
+}
+.search-bar{
+    padding: 5px;
+    input{
+        border: 1.2px solid #eee;
+        width: 100%;
+        outline: none;
+        padding: 9px;
+        background-color: #f1f3f4;
+        border-radius: 6px;
+    }
+    input:focus{
+        border: 1.2px solid rgb(79, 246, 129);
     }
 }
