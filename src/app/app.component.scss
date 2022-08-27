@@ -1,0 +1,16 @@
+.wrapper{
+    //max-width: 1200px;
+    display: flex;
+    justify-content: center;  
+    // gap: 1em;
+    .main-header{
+        width: 40%;
+        // background-color: #eee;
+    }
+
+    .routing{
+        border: 1.2px solid green;
+        width: 90%;
+    }
+
+}

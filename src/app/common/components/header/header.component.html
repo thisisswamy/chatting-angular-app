@@ -1,0 +1,28 @@
+<header>
+    <div class="dp">
+            <img src="" alt="">
+    </div>
+    <div class="options">
+        <span>Status</span>
+        <span class="plus">Add</span>
+        <span (click)="openMoreoprions()">More</span>
+    </div>
+</header>
+
+<div class="opt">
+    <div class="more-options" *ngIf="isMoreOpen">
+        <ul (click)="closeOptions($event)">
+            <li>New Group</li>
+            <li>Settings</li>
+            <li>logout</li>
+        </ul>
+    </div>
+</div>
+
+<div class="contacts">
+    <app-contacts></app-contacts>
+    <app-contacts></app-contacts>
+    <app-contacts></app-contacts>
+    <app-contacts></app-contacts>
+    <app-contacts></app-contacts>
+</div>
