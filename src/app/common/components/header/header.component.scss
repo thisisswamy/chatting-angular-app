@@ -1,68 +1,76 @@
 
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    background-color: #f1f3f4;
-    margin-bottom: 6px;
-    // width: 50%;
-    .dp{
-        border: 2px dotted red;
-        border-radius: 50%;
-        padding: 10px 20px;
-    }
-    .options{
+.top{
+    position: sticky;
+    header{
         display: flex;
-        gap: 1em;
-        span{
-            cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        background-color: #f1f3f4;
+        margin-bottom: 6px;
+        // width: 50%;
+        .dp{
+            border: 2px dotted red;
+            border-radius: 50%;
+            padding: 10px 20px;
         }
-        span:hover{
-            color: darkblue;
-            text-decoration: underline;
-        }
-
-    }
-}
-
-.opt{
-    position: relative;
-    .more-options{
-        background-color: #fff;
-        box-shadow: 0 0 10px 0 rgba(0 0 0/25%);
-        width: 50%;
-        position: absolute;
-        right: 0px;
-        border-radius: 10px;
-        ul{
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            li{
-                padding: 10px 25px;
-                width: 100%;
+        .options{
+            display: flex;
+            gap: 1em;
+            span{
                 cursor: pointer;
             }
-            li:hover{
-                background-color: #eee;
+            span:hover{
+                color: darkblue;
+                text-decoration: underline;
             }
-            
+    
+        }
+    }
+    
+    .opt{
+        position: relative;
+        .more-options{
+            background-color: #fff;
+            box-shadow: 0 0 10px 0 rgba(0 0 0/25%);
+            width: 50%;
+            position: absolute;
+            right: 0px;
+            border-radius: 10px;
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    padding: 10px 25px;
+                    width: 100%;
+                    cursor: pointer;
+                }
+                li:hover{
+                    background-color: #eee;
+                }
+                
+            }
+        }
+    }
+    .search-bar{
+        padding: 5px;
+        input{
+            border: 1.2px solid #eee;
+            width: 100%;
+            outline: none;
+            padding: 9px;
+            background-color: #f1f3f4;
+            border-radius: 6px;
+        }
+        input:focus{
+            border: 1.2px solid rgb(20, 169, 65);
         }
     }
 }
-.search-bar{
-    padding: 5px;
-    input{
-        border: 1.2px solid #eee;
-        width: 100%;
-        outline: none;
-        padding: 9px;
-        background-color: #f1f3f4;
-        border-radius: 6px;
-    }
-    input:focus{
-        border: 1.2px solid rgb(79, 246, 129);
-    }
+
+.contacts{
+    height:430px;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
 }
