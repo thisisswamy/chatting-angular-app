@@ -1,0 +1,32 @@
+.text-wrapper{
+    width: 100%;
+    // background-color: #eee;
+    input{
+        outline: none;
+        border: 1px solid #ddd;
+        background-color: #f1f3f4;;
+        padding: 7px;
+        border-radius: 8px;
+        width: 80%;
+    }
+    input:focus{
+        border: 1.5px solid darkgreen;
+    }
+    button{
+        outline: none;
+        border: 1.2px solid #ccc;
+        border-radius: 4px;
+        padding: 5px 15px;
+        margin: 0 .2em;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .button-send:hover{
+        background-color: green;
+        color: #fff;
+    }
+    button:hover{
+        background-color: rgb(216, 8, 8);
+        color: #fff;
+    }
+}
