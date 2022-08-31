@@ -14,7 +14,20 @@
 </div>
 
 <div class="content-wrappper">
-    <p>List of messeges</p>
+    <div class="chat" *ngFor="let obj of userChatList">
+        <div class="from">
+            <div class="from-text">
+                <p>{{obj.from}}</p>
+                <small>{{obj.fromDate}}</small>
+            </div>
+        </div>
+        <div class="to">
+            <div class="to-text">
+                <p>{{obj.to}}</p>
+                <small>{{obj.toDate}}</small>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="text-box">

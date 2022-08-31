@@ -42,7 +42,67 @@
 }
 .content-wrappper{
    background-color: #d6ebf5;
-    height: 85%;
+    height: 100vh;
+    .chat{
+        
+        .to{
+            display: flex;
+            justify-content:flex-end;
+
+            .to-text{
+                background-color: #f1f3f4;
+                border-radius: 8px;
+                padding: 10px;
+                margin-right: 1em;
+                P{
+                    margin: 0;
+                }
+                small{
+                    float: right;
+                    font-size: .6em;
+                }
+            }
+            // flex-direction: flex-end;
+            
+        }
+        .from{
+            display: flex;
+            justify-content:flex-start;
+            position: relative;
+
+            .from-text{
+                background-color: burlywood;
+                border-radius: 8px;
+                padding: 10px;
+                margin-left: 1em;
+                margin-top: .8em;
+                P{
+                    margin: 0;
+                    font-size: .9em;
+                }
+                small{
+                    float: right;
+                    font-size: .6em;
+                }
+            }
+            // .from-text::before{
+            //     border: 2px solid;
+            //     content: '';
+            //     width: 0;
+            //     height: 0;
+            //     position: absolute;
+            //     border: 15px solid transparent;
+            //     border-top: 0;
+            //     border-bottom: 15px solid red;
+            //     left: -7px;
+            //     top:30px;
+            //     width: 0;
+            //     transform: rotate(-90deg);
+            // }
+            // flex-direction: flex-end;
+            
+        }
+    }
 
 }
 .content-wrappper:hover{
